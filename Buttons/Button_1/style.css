@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: #f0f4f8;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: steelblue;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s ease-in-out;
+}
+
+button:hover {
+  opacity: 1;
+}
