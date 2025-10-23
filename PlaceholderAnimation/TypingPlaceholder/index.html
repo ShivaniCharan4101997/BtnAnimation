@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="text" id="type-placeholder">
+</body>
+<script>
+    const words = ["Search projects...", "Try: CSS animation", "Type a color name"];
+    const input = document.getElementById("type-placeholder");
+    let i = 0, j = 0, forward = true;
+    
+    function tick(){
+      const current = words[i];
+      input.placeholder = current.slice(0, j);
+      if(forward) j++;
+      else j--;
+      if(j === current.length + 1){ forward = false; setTimeout(tick, 900); return; }
+      if(j === 0){ forward = true; i = (i + 1) % words.length; }
+      setTimeout(tick, forward ? 80 : 40);
+    }
+    tick();
+    </script>
+    
+</html>

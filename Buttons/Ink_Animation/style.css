@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #000;
+    color: #fff;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* ---- Banner ---- */
+  .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #000;
+  }
+  
+  /* ---- Content ---- */
+  .banner .content {
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .title {
+    font-size: 6rem;
+  }
+  
+  .content p {
+    text-align: end;
+    font-size: 1.5rem;
+    margin-top: 8px;
+  }
+  
+  /* ---- Ink Reveal Effect ---- */
+  .banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  
+    /* The image that’s being revealed */
+    background-image: url("../../mhaimg/mha_halloween.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    /* The ink animation acts as a mask */
+    -webkit-mask-image: url("../../ink2.gif");
+    -webkit-mask-size: cover;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-mode: alpha;
+  
+    mask-image: url("../../ink2.gif");
+    mask-size: cover;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-mode: alpha;
+  
+    /* Optional fade-in transition if you want */
+    transition: opacity 1s ease;
+  }
+  

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Responsive Image Slider</title>
+
+  <!-- Remix Icon -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+
+  <!-- SwiperJS CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+  <!-- Custom CSS & JS -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="gallery">
+
+    <!-- Main Swiper (Gallery Cards) -->
+    <div class="swiper gallery-cards">
+      <div class="swiper-wrapper">
+
+        <!-- All Might -->
+        <div class="swiper-slide">
+          <article class="card">
+            <img src="../mhaimg/ALL MIGHT ✨.jpeg" alt="All Might image" />
+            <div class="card-data">
+              <h2>All Might</h2>
+              <span>Toshinori Yagi</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Hawks -->
+        <div class="swiper-slide">
+          <article class="card">
+            <img src="../mhaimg/hawk1.jpeg" alt="Hawks image" />
+            <div class="card-data">
+              <h2>Hawks</h2>
+              <span>Keigo Takami</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Bakugo -->
+        <div class="swiper-slide">
+          <article class="card">
+            <img src="../mhaimg/Bakugo katchan.jpeg" alt="Bakugo image" />
+            <div class="card-data">
+              <h2>Bakugo</h2>
+              <span>Katsuki Bakugo</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Shoto -->
+        <div class="swiper-slide">
+          <article class="card">
+            <img src="../mhaimg/shoto1.jpeg" alt="Shoto Todoroki image" />
+            <div class="card-data">
+              <h2>Shoto</h2>
+              <span>Shoto Todoroki</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Deku -->
+        <div class="swiper-slide">
+          <article class="card">
+            <img src="../mhaimg/deku1.jpeg" alt="Deku image" />
+            <div class="card-data">
+              <h2>Deku</h2>
+              <span>Izuku Midoriya</span>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Thumbnail Swiper -->
+    <div class="gallery-overflow">
+      <div class="swiper gallery-thumbs">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="gallery-thumbnail">
+              <img src="../mhaimg/ALL MIGHT ✨.jpeg" alt="All Might image" />
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="gallery-thumbnail">
+              <img src="../mhaimg/hawk1.jpeg" alt="Hawks image" />
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="gallery-thumbnail">
+              <img src="../mhaimg/Bakugo katchan.jpeg" alt="Bakugo image" />
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="gallery-thumbnail">
+              <img src="../mhaimg/shoto1.jpeg" alt="Shoto Todoroki image" />
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="gallery-thumbnail">
+              <img src="../mhaimg/deku1.jpeg" alt="Deku image" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Swiper Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper Navigation Arrows -->
+    <div class="swiper-button-next">
+      <i class="ri-arrow-right-line"></i>
+    </div>
+    <div class="swiper-button-prev">
+      <i class="ri-arrow-left-line"></i>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+/* Add spacing between thumbnails */
+  .gallery-thumbs .swiper-slide:not(:last-child) {
+    margin-right: 16px;
+  }
+  
+
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .gallery-cards {
+      width: 240px;
+      height: 300px;
+    }
+  
+    .card {
+      width: 240px;
+      height: 300px;
+    }
+  
+    .gallery-thumbs {
+      max-width: 260px;
+    }
+  
+    .gallery-thumbnail {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .swiper-slide-active .card {
+      transform: scale(1.12);
+    }
+  }
+  

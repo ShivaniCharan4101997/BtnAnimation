@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #111;
+  font-family: "Poppins", sans-serif;
+}
+
+input {
+  display: none;
+}
+
+.switch {
+  max-width: 250px;
+  width: 200px;
+  height: 90px;
+  background-color: #dedede;
+  border-radius: 68px;
+  position: relative;
+  transition: background-color 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.switch::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: deeppink;
+  opacity: 0.8;
+  box-shadow: 0px 10px 20px 0px rgba(99, 107, 144, 0.35);
+  transition: all 0.25s ease;
+}
+
+input:checked + .switch::before {
+  transform: translateX(100px);
+  animation: toggle 0.8s;
+}
+
+.switch:hover::before {
+  animation: toggle 0.8s;
+}
+
+@keyframes toggle {
+  0%   { width: 80px; }
+  25%  { width: 65px; }
+  50%  { width: 110px; }
+  100% { width: 100px; }
+}

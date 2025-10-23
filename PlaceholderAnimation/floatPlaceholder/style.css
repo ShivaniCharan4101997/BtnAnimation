@@ -1,0 +1,36 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.float { position: relative; display: inline-block; width: 320px; }
+.float input {
+  width: 100%;
+  padding: 16px 10px 8px 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.float span {
+  position: absolute;
+  left: 12px;
+  outline: none;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform .18s ease, font-size .18s ease, top .18s ease;
+  background: white;
+  padding: 0 6px;
+  color: #666;
+  pointer-events: none;
+  border-color: navy;
+}
+
+input:focus +span{
+    top: -10px;
+    background-color: #fff;
+color: navy;
+}

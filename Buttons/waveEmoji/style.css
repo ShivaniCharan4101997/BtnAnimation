@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.wave {
+  font-size: 4rem;
+  display: inline-block;
+  transition: transform 200ms;
+  animation: waving 1s ease-in-out infinite alternate forwards;
+  transform-origin: 80% 90%;
+}
+
+@keyframes waving {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(40deg);
+  }
+}

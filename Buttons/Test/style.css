@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    height: 100vh;
+    /* overflow-x: hidden; */
+    display: grid;
+    place-items: center;
+    background: #e0f7ff;
+  }
+/*   
+  .bubble-container {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .bubble {
+    width: 50px;
+    height: 50px;
+    background: #4fa3f7;
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: float 4s ease-in-out infinite alternate;
+  }
+  
+  /* stagger animations for natural feel */
+  /* .bubble:nth-child(1) { animation-delay: 0s; }
+  .bubble:nth-child(2) { animation-delay: 0.5s; }
+  .bubble:nth-child(3) { animation-delay: 1s; }
+  .bubble:nth-child(4) { animation-delay: 1.5s; }
+  .bubble:nth-child(5) { animation-delay: 2s; }
+   */
+  
+   /* @keyframes float {
+    0% {
+      transform: translateY(0);
+      opacity: 0.7;
+    }
+    50% {
+      transform: translateY(-50px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 0.7;
+    }
+  }
+    */
+
+    /* .shape{
+      width: 600px;
+      height: 600px;
+      background-color: deeppink;
+      clip-path:path("M  10,50 L 90 ,50 A 10 ,10 0 ,0,0 100,40 L 100,10 A 10 ,10 0,0,1 110,0 L 190,0 A 10,10 0,0,1 200 ,10 L 200, 190 A 10,10 0,0,1 190,200 L 10 ,200 A 10 ,10 0,0,1 0 ,190 L 0,60 A 10,10 0,0,1 10,50 Z");
+    } */
+
+    .image-wrapper{
+      column-count: 3;
+      column-gap: 16px;
+      overflow: hidden;
+    }
+
+    .image-wrapper img{
+      width: 100%;
+      margin-bottom: 16px;
+      border-radius: 5rem;
+      display: block;
+      transition: transform 250ms;
+      transform-origin: center center;
+      z-index: 100;
+      position: relative;
+    }
+    .image-wrapper img:hover {
+      transform: scale(1.2);
+    }

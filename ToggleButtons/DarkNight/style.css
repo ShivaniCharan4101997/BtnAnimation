@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    background: #d1d1d1;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.5s;
+  }
+
+  input {
+    display: none;
+  }
+
+  .button {
+    max-width: 250px;
+    width: 220px;
+    height: 100px;
+    border-radius: 80px;
+    background: linear-gradient(90deg, deeppink, gray);
+    position: relative;
+    cursor: pointer;
+    transition: background 0.5s ease;
+  }
+
+  .span {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform 0.4s ease;
+  }
+
+  .span #icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: gold;
+    transition: color 0.5s;
+  }
+
+  input:checked + .button {
+    background: linear-gradient(90deg, #111, #333);
+  }
+
+  input:checked + .button .span {
+    transform: translateX(115px);
+    background-color: #111;
+  }
+
+  input:checked + .button .span #icon {
+    color: #fff;
+  }
